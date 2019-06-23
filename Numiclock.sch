@@ -1,4 +1,183 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:Numiclock-cache
+EELAYER 29 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:AMS1117 U?
+U 1 1 5D0F79FB
+P 2775 1275
+F 0 "U?" H 2775 1517 50  0000 C CNN
+F 1 "AMS1117" H 2775 1426 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2775 1475 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2875 1025 50  0001 C CNN
+	1    2775 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_Array:ULN2803A U?
+U 1 1 5D0F8877
+P 5450 2975
+F 0 "U?" H 5450 3542 50  0000 C CNN
+F 1 "ULN2803A" H 5450 3451 50  0000 C CNN
+F 2 "" H 5500 2325 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5550 2775 50  0001 C CNN
+	1    5450 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D0FABD1
+P 3200 1500
+F 0 "R?" H 3259 1546 50  0000 L CNN
+F 1 "100" H 3259 1455 50  0000 L CNN
+F 2 "" H 3200 1500 50  0001 C CNN
+F 3 "~" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D0FB650
+P 3200 2025
+F 0 "R?" H 3259 2071 50  0000 L CNN
+F 1 "150" H 3259 1980 50  0000 L CNN
+F 2 "" H 3200 2025 50  0001 C CNN
+F 3 "~" H 3200 2025 50  0001 C CNN
+	1    3200 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 1575 2775 1750
+Wire Wire Line
+	2775 1750 3200 1750
+Wire Wire Line
+	3200 1750 3200 1600
+Wire Wire Line
+	3200 1400 3200 1275
+Wire Wire Line
+	3200 1275 3075 1275
+Wire Wire Line
+	3200 1750 3200 1925
+Connection ~ 3200 1750
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5D0FC59B
+P 4075 3175
+F 0 "U?" H 4075 3956 50  0000 C CNN
+F 1 "74HC595" H 4075 3865 50  0000 C CNN
+F 2 "" H 4075 3175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 4075 3175 50  0001 C CNN
+	1    4075 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 2775 5050 2775
+Wire Wire Line
+	4475 2875 5050 2875
+Wire Wire Line
+	4475 2975 5050 2975
+Wire Wire Line
+	4475 3075 5050 3075
+Wire Wire Line
+	4475 3175 5050 3175
+Wire Wire Line
+	4475 3275 5050 3275
+Wire Wire Line
+	4475 3375 5050 3375
+Wire Wire Line
+	4475 3475 5050 3475
+$Comp
+L Eigene~Bauteile:IV-9 DS?
+U 1 1 5D0F85FE
+P 7375 3125
+F 0 "DS?" V 7329 2847 50  0000 R CNN
+F 1 "IV-9" V 7420 2847 50  0000 R CNN
+F 2 "" H 7375 2625 50  0001 C CNN
+F 3 "" H 7375 3275 50  0001 C CNN
+	1    7375 3125
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6925 3525 6400 3525
+Wire Wire Line
+	6400 3175 5850 3175
+Wire Wire Line
+	6925 3225 6500 3225
+Wire Wire Line
+	6500 3225 6500 3275
+Wire Wire Line
+	6500 3275 5850 3275
+Wire Wire Line
+	6925 3325 6500 3325
+Wire Wire Line
+	6500 3325 6500 3375
+Wire Wire Line
+	6500 3375 5850 3375
+Wire Wire Line
+	6925 2825 6450 2825
+Wire Wire Line
+	6450 2825 6450 3475
+Wire Wire Line
+	6450 3475 5850 3475
+Wire Wire Line
+	5850 2675 6400 2675
+Wire Wire Line
+	6400 2675 6400 2725
+Wire Wire Line
+	6400 2725 6925 2725
+Wire Wire Line
+	6400 3525 6400 3175
+Wire Wire Line
+	6350 3075 5850 3075
+Wire Wire Line
+	6925 3425 6350 3425
+Wire Wire Line
+	6350 3425 6350 3075
+Wire Wire Line
+	6350 2975 5850 2975
+Wire Wire Line
+	6925 3025 6350 3025
+Wire Wire Line
+	6350 3025 6350 2975
+Wire Wire Line
+	6350 2875 5850 2875
+Wire Wire Line
+	6925 2925 6350 2925
+Wire Wire Line
+	6350 2925 6350 2875
+Wire Wire Line
+	6400 2775 5850 2775
+Wire Wire Line
+	6925 3125 6400 3125
+Wire Wire Line
+	6400 3125 6400 2775
+Wire Wire Line
+	6400 2675 6400 1275
+Wire Wire Line
+	6400 1275 3200 1275
+Connection ~ 6400 2675
+Connection ~ 3200 1275
+Wire Wire Line
+	5450 3675 5450 4225
+Wire Wire Line
+	5450 4225 4075 4225
+Wire Wire Line
+	4075 4225 4075 3875
+Wire Wire Line
+	3200 2125 3200 4225
+Wire Wire Line
+	3200 4225 4075 4225
+Connection ~ 4075 4225
 $EndSCHEMATC
