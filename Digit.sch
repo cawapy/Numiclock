@@ -1,0 +1,250 @@
+EESchema Schematic File Version 4
+LIBS:Numiclock-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC595 U201
+U 1 1 5D1035CB
+P 5575 3725
+AR Path="/5D0FCECD/5D1035CB" Ref="U201"  Part="1" 
+AR Path="/5D128393/5D1035CB" Ref="U301"  Part="1" 
+AR Path="/5D1293BD/5D1035CB" Ref="U?"  Part="1" 
+AR Path="/5D1293C5/5D1035CB" Ref="U?"  Part="1" 
+AR Path="/5D129954/5D1035CB" Ref="U401"  Part="1" 
+AR Path="/5D12995C/5D1035CB" Ref="U501"  Part="1" 
+F 0 "U201" H 5725 4425 50  0000 C CNN
+F 1 "74HC595" H 5825 4325 50  0000 C CNN
+F 2 "" H 5575 3725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 5575 3725 50  0001 C CNN
+	1    5575 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Eigene~Bauteile:IV-9 DS201
+U 1 1 5D1035D1
+P 8250 3625
+AR Path="/5D0FCECD/5D1035D1" Ref="DS201"  Part="1" 
+AR Path="/5D128393/5D1035D1" Ref="DS301"  Part="1" 
+AR Path="/5D1293BD/5D1035D1" Ref="DS?"  Part="1" 
+AR Path="/5D1293C5/5D1035D1" Ref="DS?"  Part="1" 
+AR Path="/5D129954/5D1035D1" Ref="DS401"  Part="1" 
+AR Path="/5D12995C/5D1035D1" Ref="DS501"  Part="1" 
+F 0 "DS201" V 8204 3347 50  0000 R CNN
+F 1 "IV-9" V 8295 3347 50  0000 R CNN
+F 2 "Own:IV-9" H 8250 3125 50  0001 C CNN
+F 3 "" H 8250 3775 50  0001 C CNN
+	1    8250 3625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7300 3225 7600 3225
+Wire Wire Line
+	7600 3225 7800 3225
+Connection ~ 7600 3225
+Wire Wire Line
+	7300 3325 7800 3325
+Wire Wire Line
+	7300 3425 7800 3425
+Wire Wire Line
+	7800 3525 7300 3525
+Wire Wire Line
+	7300 3625 7800 3625
+Wire Wire Line
+	7800 3725 7300 3725
+Wire Wire Line
+	7300 3825 7800 3825
+Wire Wire Line
+	7300 3925 7800 3925
+Wire Wire Line
+	7300 4025 7800 4025
+Wire Wire Line
+	5975 4025 6500 4025
+Wire Wire Line
+	5975 3325 6500 3325
+Wire Wire Line
+	5975 3425 6500 3425
+Wire Wire Line
+	6500 3525 5975 3525
+Wire Wire Line
+	5975 3625 6500 3625
+Wire Wire Line
+	6500 3725 5975 3725
+Wire Wire Line
+	5975 3825 6500 3825
+Wire Wire Line
+	5975 3925 6500 3925
+$Comp
+L Transistor_Array:ULN2803A U202
+U 1 1 5D1035FB
+P 6900 3525
+AR Path="/5D0FCECD/5D1035FB" Ref="U202"  Part="1" 
+AR Path="/5D128393/5D1035FB" Ref="U302"  Part="1" 
+AR Path="/5D1293BD/5D1035FB" Ref="U?"  Part="1" 
+AR Path="/5D1293C5/5D1035FB" Ref="U?"  Part="1" 
+AR Path="/5D129954/5D1035FB" Ref="U402"  Part="1" 
+AR Path="/5D12995C/5D1035FB" Ref="U502"  Part="1" 
+F 0 "U202" H 6900 4092 50  0000 C CNN
+F 1 "ULN2803A" H 6900 4001 50  0000 C CNN
+F 2 "" H 6950 2875 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 7000 3325 50  0001 C CNN
+	1    6900 3525
+	1    0    0    -1  
+$EndComp
+Text Label 5575 2725 2    50   ~ 0
+5V
+Text Label 7600 2725 2    50   ~ 0
+3V15
+Text HLabel 4625 3325 0    50   Input ~ 0
+SER
+Text HLabel 4625 3525 0    50   Input ~ 0
+SRCLK
+Text HLabel 4625 3625 0    50   Input ~ 0
+~SRCLR
+Text HLabel 4625 3825 0    50   Input ~ 0
+RCLK
+Text HLabel 4625 3925 0    50   Input ~ 0
+~OE
+Text HLabel 6100 4225 2    50   Output ~ 0
+CASC
+Wire Wire Line
+	4625 3325 5175 3325
+Wire Wire Line
+	4625 3525 5175 3525
+Wire Wire Line
+	4625 3625 5175 3625
+Wire Wire Line
+	4625 3825 5175 3825
+Wire Wire Line
+	4625 3925 5175 3925
+Wire Wire Line
+	5975 4225 6100 4225
+$Comp
+L power:GND #PWR0202
+U 1 1 5D108155
+P 5575 4525
+AR Path="/5D0FCECD/5D108155" Ref="#PWR0202"  Part="1" 
+AR Path="/5D128393/5D108155" Ref="#PWR0302"  Part="1" 
+AR Path="/5D1293BD/5D108155" Ref="#PWR?"  Part="1" 
+AR Path="/5D1293C5/5D108155" Ref="#PWR?"  Part="1" 
+AR Path="/5D129954/5D108155" Ref="#PWR0402"  Part="1" 
+AR Path="/5D12995C/5D108155" Ref="#PWR0502"  Part="1" 
+F 0 "#PWR0202" H 5575 4275 50  0001 C CNN
+F 1 "GND" H 5580 4352 50  0000 C CNN
+F 2 "" H 5575 4525 50  0001 C CNN
+F 3 "" H 5575 4525 50  0001 C CNN
+	1    5575 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0203
+U 1 1 5D108485
+P 6100 2725
+AR Path="/5D0FCECD/5D108485" Ref="#PWR0203"  Part="1" 
+AR Path="/5D128393/5D108485" Ref="#PWR0303"  Part="1" 
+AR Path="/5D1293BD/5D108485" Ref="#PWR?"  Part="1" 
+AR Path="/5D1293C5/5D108485" Ref="#PWR?"  Part="1" 
+AR Path="/5D129954/5D108485" Ref="#PWR0403"  Part="1" 
+AR Path="/5D12995C/5D108485" Ref="#PWR0503"  Part="1" 
+F 0 "#PWR0203" H 6100 2475 50  0001 C CNN
+F 1 "GND" V 6105 2597 50  0000 R CNN
+F 2 "" H 6100 2725 50  0001 C CNN
+F 3 "" H 6100 2725 50  0001 C CNN
+	1    6100 2725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VD #PWR0205
+U 1 1 5D109B6F
+P 7600 2500
+AR Path="/5D0FCECD/5D109B6F" Ref="#PWR0205"  Part="1" 
+AR Path="/5D128393/5D109B6F" Ref="#PWR0305"  Part="1" 
+AR Path="/5D1293BD/5D109B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5D1293C5/5D109B6F" Ref="#PWR?"  Part="1" 
+AR Path="/5D129954/5D109B6F" Ref="#PWR0405"  Part="1" 
+AR Path="/5D12995C/5D109B6F" Ref="#PWR0505"  Part="1" 
+F 0 "#PWR0205" H 7600 2350 50  0001 C CNN
+F 1 "VD" H 7550 2650 50  0000 L CNN
+F 2 "" H 7600 2500 50  0001 C CNN
+F 3 "" H 7600 2500 50  0001 C CNN
+	1    7600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0201
+U 1 1 5D10C645
+P 5575 2500
+AR Path="/5D0FCECD/5D10C645" Ref="#PWR0201"  Part="1" 
+AR Path="/5D128393/5D10C645" Ref="#PWR0301"  Part="1" 
+AR Path="/5D1293BD/5D10C645" Ref="#PWR?"  Part="1" 
+AR Path="/5D1293C5/5D10C645" Ref="#PWR?"  Part="1" 
+AR Path="/5D129954/5D10C645" Ref="#PWR0401"  Part="1" 
+AR Path="/5D12995C/5D10C645" Ref="#PWR0501"  Part="1" 
+F 0 "#PWR0201" H 5575 2350 50  0001 C CNN
+F 1 "VCC" H 5592 2673 50  0000 C CNN
+F 2 "" H 5575 2500 50  0001 C CNN
+F 3 "" H 5575 2500 50  0001 C CNN
+	1    5575 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C201
+U 1 1 5D10D50F
+P 5900 2725
+AR Path="/5D0FCECD/5D10D50F" Ref="C201"  Part="1" 
+AR Path="/5D128393/5D10D50F" Ref="C301"  Part="1" 
+AR Path="/5D1293BD/5D10D50F" Ref="C?"  Part="1" 
+AR Path="/5D1293C5/5D10D50F" Ref="C?"  Part="1" 
+AR Path="/5D129954/5D10D50F" Ref="C401"  Part="1" 
+AR Path="/5D12995C/5D10D50F" Ref="C501"  Part="1" 
+F 0 "C201" V 5671 2725 50  0000 C CNN
+F 1 "0μ1" V 5762 2725 50  0000 C CNN
+F 2 "" H 5900 2725 50  0001 C CNN
+F 3 "~" H 5900 2725 50  0001 C CNN
+	1    5900 2725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5575 2725 5575 3125
+Wire Wire Line
+	5575 2725 5800 2725
+Wire Wire Line
+	6000 2725 6100 2725
+$Comp
+L power:GND #PWR0204
+U 1 1 5D10757C
+P 6900 4525
+AR Path="/5D0FCECD/5D10757C" Ref="#PWR0204"  Part="1" 
+AR Path="/5D128393/5D10757C" Ref="#PWR0304"  Part="1" 
+AR Path="/5D1293BD/5D10757C" Ref="#PWR?"  Part="1" 
+AR Path="/5D1293C5/5D10757C" Ref="#PWR?"  Part="1" 
+AR Path="/5D129954/5D10757C" Ref="#PWR0404"  Part="1" 
+AR Path="/5D12995C/5D10757C" Ref="#PWR0504"  Part="1" 
+F 0 "#PWR0204" H 6900 4275 50  0001 C CNN
+F 1 "GND" H 6905 4352 50  0000 C CNN
+F 2 "" H 6900 4525 50  0001 C CNN
+F 3 "" H 6900 4525 50  0001 C CNN
+	1    6900 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 4425 5575 4525
+Wire Wire Line
+	6900 4225 6900 4525
+Wire Wire Line
+	5575 2500 5575 2725
+Connection ~ 5575 2725
+Wire Wire Line
+	7600 2500 7600 3225
+$EndSCHEMATC
